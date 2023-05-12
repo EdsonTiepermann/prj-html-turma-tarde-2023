@@ -9,11 +9,11 @@
 <body>
     <nav>
         <header>
+           
         <a href="index.html" target="_self">Voltar ao menu principal</a>
         <i>
            <strong><h1>Página de cadastro</h1></strong>
         </i>
-        <hr>
          <i>
             <h2>insira as informações abaixo<br>👇</h1>
 
@@ -23,16 +23,16 @@
         </header>
             <form action="alunoscadastrados.html" method="get">
               <strong>
-                 <label>Nome:</label> 
+                 <label for="username">Nome:</label> 
            
                    <input type="text" placeholder="Inserir Nome">
                     <br>
-                   <label for="radio">Sexo:</label>
+                   <label for="radio" id="username">Sexo:</label>
                    <input type="radio" name="Sexo">Masculino
                    <input type="radio" name="Sexo">Feminino
                     <br>
                     <label for="date">Data de nascimento:</label>
-                    <input type="date" placeholder="">
+                    <input type="date">
                     <br>
                     <label for="text">Endereço:</label>
                     <input type="text" placeholder="inserir Endereço">
@@ -49,8 +49,8 @@
                     <label for="text">Cidade:</label>
                     <input type="text" placeholder="cidade">
                     <br>
-                    <label for="Enviar">Enviaar formulário</label>
-                    <input type="submit" placeholder="">
+                    <label for="Enviar">Enviar formulário</label>
+                    <input type="submit"  value="Clique aqui">
 
 
             </form>
