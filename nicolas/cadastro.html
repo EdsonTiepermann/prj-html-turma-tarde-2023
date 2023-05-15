@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOLA DE CULINÁRIA OE.</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li style="display: inline-block;">
+               <a href="index.html">Home</a>
+            </li>
+            <li style="display: inline-block;">
+               <a href="receitaUm.html">Receitas</a>
+               <ol>
+                <li><a href="receitaUm.html">Receita 1</a></li>
+                <li><a href="receitaDois.html">Receita 2</a></li>
+                <li><a href="receitaTres.html">Receita 3</a></li>
+              </ol>
+            </li>
+            <li style="display: inline-block;">
+               <a href="cadastro.html">Cadastro</a>
+            </li>
+            <li style="display: inline-block;">
+                <a href="alunos.html">Alunos</a>
+             </li>
+         </ul>
+    </nav>
+    <header>
+        <center><h1>Cadastro de Alunos</h1></center>
+    </header>
+    <section>
+        <center>
+            <form action="alunos_cadastrados.html" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required><br>
+        
+            <label for="data">Data de nascimento:</label>
+            <input type="date" id="data" name="data" required><br>
+        
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br>
+        
+            <label for="num_casa">Número da casa:</label>
+            <input type="text" id="num_casa" name="num_casa" required><br>
+        
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required><br>
+        
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required><br>
+        
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select><br>
+      
+            <input type="submit" value="Cadastrar">
+            </center>
+        </form>
+    
+    <footer>
+        <address>
+            <center>
+                <br>
+                OE é a escola de culinária mais gente boa do mundo<br>
+                Rua dos Alfeneiros 1080 - Centro - Ponta Grossa/PR - Brasil<br>
+                (42) 99123-4567
+                <br>
+            </center>
+        </address>
+    </footer
+</body>
+
+</html>
