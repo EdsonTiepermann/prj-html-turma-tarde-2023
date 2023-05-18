@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="index.html" target="_blank">Página Inicial</a></li>
+        <li><a href="cadastrarse.html" target="_blank">Cadastrar-se</a></li>
+        <li><a href="alunosCadastrados.html" target="_blank">Alunos Cadastrados</a></li>
+        <li><a href="receita1.html" target="_blank">Bolo de Laranja</a></li>
+        <li><a href="receita2.html" target="_blank">Bolo de Abacate</a></li>
+        <li><a href="receita3.html" target="_blank">Bolo do Minecraft</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <div>
+    <h1>Faça seu cadastro!</h1>
+    <br>
+    <form action="alunosCadastrados.html" method="get">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required />
+      <br>
+      <label for="sexo">Sexo:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Masculino</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Feminino</label>    
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br>
+      <label for="data-nasc">Data de nascimento:</label>
+      <input type="date" id="data-nasc" name="data-nasc" required />
+      <br>
+      <label for="num-tel">Telefone:</label>
+      <input type="tel" id="tel" name="tel" required />
+      <br>
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required />
+      <br>
+      <label for="num-casa">Número da casa:</label>
+      <input type="number" id="num-casa" name="num-casa" required />
+      <br>
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" required />
+      <br>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required />
+      <br>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>    
+  <footer>
+    <p>© 2023 Davi Cortelete. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Davi Cortelete no Curso de TI da Odonto Excellence</a></p>
+  </footer>
+</body>
+</html>
