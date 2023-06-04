@@ -1,0 +1,39 @@
+
+nav {
+    background-color: #c706aa; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Arredondamento da Borda */
+    border-style: solid;
+    border-color: black; /* Cor da Borda */
+    border-width: 0.5px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  nav ul li.active a {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+  }
+  
