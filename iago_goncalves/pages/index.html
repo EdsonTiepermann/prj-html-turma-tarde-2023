@@ -12,28 +12,75 @@
         padding: 0;
       }
       nav {
-        text-align: center;
         background-color: rgb(168, 168, 241);
-        height: 80px;
       }
 
-      ul {
+      .nav-container {
+        height: 80px;
         list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
       }
+
+      .market-container {
+        height: 300px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .market {
+        width: 400px;
+        height: 400px;
+      }
+
+      .img-container {
+        height: 300px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .image {
+        width: 280px;
+        height: 280px;
+        border-radius: 20px;
+      }
+
+      .iframe-container {
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        color: rgb(249, 132, 49);
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        /* border: 5px solid black; */
+      }
+
       li a {
         list-style-type: none;
         text-decoration: none;
-        color: blacks;
+        color: blue;
       }
 
       li a:hover {
         background-color: rgb(249, 132, 49);
-      }
-
-      li {
-        margin-top: 20px;
-        display: inline;
-        padding: 50px;
       }
 
       article {
@@ -43,7 +90,7 @@
   </head>
   <body>
     <nav>
-      <ul>
+      <ul class="nav-container">
         <li><a href="index.html">Home</a></li>
         <li><a href="boloBanana.html" target="_blank">Bolo de Banana</a></li>
         <li><a href="boloCenoura.html" target="_blank">Bolo de Cenoura</a></li>
@@ -60,42 +107,46 @@
     <main>
       <h1>Escola de culinária OE</h1>
       <h2>O que você vai aprender:</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam,
-        iusto vitae commodi quaerat eveniet harum aliquid ipsum mollitia dolor
-        doloribus aspernatur neque assumenda? Aut quam tenetur provident
-        laudantium. Reiciendis!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellat
-        modi, beatae eligendi esse labore officia error itaque quos optio iste
-        libero excepturi voluptas facere eius eveniet architecto quasi quae.
-      </p>
-      <div>
-        <h3>
-          <i>Aprenda a fazer essas delícias!</i>
-        </h3>
+      <div class="market-container">
+        <p class="market">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+          aliquam, iusto vitae commodi quaerat eveniet harum aliquid ipsum
+          mollitia dolor doloribus aspernatur neque assumenda? Aut quam tenetur
+          provident laudantium. Reiciendis!
+        </p>
+        <p class="market">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          repellat modi, beatae eligendi esse labore officia error itaque quos
+          optio iste libero excepturi voluptas facere eius eveniet architecto
+          quasi quae.
+        </p>
+      </div>
+
+      <h3>
+        <i>Aprenda a fazer essas delícias!</i>
+      </h3>
+      <div class="img-container">
         <a href="boloBanana.html" target="_blank"
-          ><img src="../images/banana.jpg" alt=""
+          ><img class="image" src="../images/banana.jpg" alt=""
         /></a>
         <a href="boloCenoura.html" target="_blank"
-          ><img src="../images/cenoura.jpg" alt=""
+          ><img class="image" src="../images/cenoura.jpg" alt=""
         /></a>
         <a href="boloChocolate.html" target="_blank"
-          ><img src="../images/chocolate.jpg" alt=""
+          ><img class="image" src="../images/chocolate.jpg" alt=""
         /></a>
-        <br />
-        <h3><i>Veja em 1 minuto, nosso método de ensino!.</i></h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/MpEer4FAAvY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
       </div>
+      <h3><i>Veja em 1 minuto, nosso método de ensino!.</i></h3>
+      <iframe
+        class="iframe-container"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/MpEer4FAAvY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </main>
     <section>
       <h3><i>Nosso patrocinador oficial</i></h3>
