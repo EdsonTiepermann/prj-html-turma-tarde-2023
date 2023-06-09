@@ -57,7 +57,14 @@
         height: 300px;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
+      }
+
+      .investor {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
       }
 
       h1,
@@ -137,20 +144,29 @@
         /></a>
       </div>
       <h3><i>Veja em 1 minuto, nosso método de ensino!.</i></h3>
-      <iframe
-        class="iframe-container"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/MpEer4FAAvY"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+      <div class="iframe-container">
+        <iframe
+          class="iframe-container"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/MpEer4FAAvY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
     </main>
-    <section>
-      <h3><i>Nosso patrocinador oficial</i></h3>
-      <img src="../images/patrocinador.jpg" alt="patrocinador" />
+    <h3><i>Nosso patrocinador oficial</i></h3>
+    <section class="investor">
+      <div>
+        <img
+          style="align-items: center"
+          src="../images/patrocinador.jpg"
+          alt="patrocinador"
+        />
+      </div>
     </section>
     <br />
     <article>
