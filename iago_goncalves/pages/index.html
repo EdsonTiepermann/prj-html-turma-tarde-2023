@@ -5,63 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESCOLA DE CULINÁRIA OE</title>
+    <style>
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: rgb(168, 168, 241);
+      }
+
+      .nav-container {
+        height: 80px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .market-container {
+        height: 300px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .market {
+        width: 400px;
+        height: 400px;
+      }
+
+      .img-container {
+        height: 300px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .image {
+        width: 280px;
+        height: 280px;
+        border-radius: 20px;
+      }
+
+      .iframe-container {
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .investor {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        color: rgb(249, 132, 49);
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        /* border: 5px solid black; */
+      }
+
+      li a {
+        list-style-type: none;
+        text-decoration: none;
+        color: blue;
+      }
+
+      li a:hover {
+        background-color: rgb(249, 132, 49);
+      }
+
+      article {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="boloBanana.html" target="_blank">Bolo de Banana</a>
-        </li>
-        <li>
-          <a href="boloCenoura.html" target="_blank">Bolo de Cenoura</a>
-        </li>
+      <ul class="nav-container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="boloBanana.html" target="_blank">Bolo de Banana</a></li>
+        <li><a href="boloCenoura.html" target="_blank">Bolo de Cenoura</a></li>
         <li>
           <a href="boloChocolate.html" target="_blank">Bolo de Chocolate</a>
         </li>
-        <li>
-          <a href="cadastrarAlunos.html" target="_blank">Cadastre-se</a>
-        </li>
-        <li>
-          <a href="alunosCadastrados.html" target="_blank">Alunos</a>
-        </li>
+        <li><a href="cadastrarAlunos.html" target="_blank">Cadastre-se</a></li>
+        <li><a href="alunosCadastrados.html" target="_blank">Alunos</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
     <br />
-    <hr />
+    <!-- <hr /> -->
     <main>
       <h1>Escola de culinária OE</h1>
       <h2>O que você vai aprender:</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam,
-        iusto vitae commodi quaerat eveniet harum aliquid ipsum mollitia dolor
-        doloribus aspernatur neque assumenda? Aut quam tenetur provident
-        laudantium. Reiciendis!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellat
-        modi, beatae eligendi esse labore officia error itaque quos optio iste
-        libero excepturi voluptas facere eius eveniet architecto quasi quae.
-      </p>
-      <div>
-        <h3>
-          <i>Aprenda a fazer essas delícias!</i>
-        </h3>
+      <div class="market-container">
+        <p class="market">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+          aliquam, iusto vitae commodi quaerat eveniet harum aliquid ipsum
+          mollitia dolor doloribus aspernatur neque assumenda? Aut quam tenetur
+          provident laudantium. Reiciendis!
+        </p>
+        <p class="market">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          repellat modi, beatae eligendi esse labore officia error itaque quos
+          optio iste libero excepturi voluptas facere eius eveniet architecto
+          quasi quae.
+        </p>
+      </div>
+
+      <h3>
+        <i>Aprenda a fazer essas delícias!</i>
+      </h3>
+      <div class="img-container">
         <a href="boloBanana.html" target="_blank"
-          ><img src="../images/banana.jpg" alt=""
+          ><img class="image" src="../images/banana.jpg" alt=""
         /></a>
         <a href="boloCenoura.html" target="_blank"
-          ><img src="../images/cenoura.jpg" alt=""
+          ><img class="image" src="../images/cenoura.jpg" alt=""
         /></a>
         <a href="boloChocolate.html" target="_blank"
-          ><img src="../images/chocolate.jpg" alt=""
+          ><img class="image" src="../images/chocolate.jpg" alt=""
         /></a>
-        <br />
-        <h3><i>Veja em 1 minuto, nosso método de ensino!.</i></h3>
+      </div>
+      <h3><i>Veja em 1 minuto, nosso método de ensino!.</i></h3>
+      <div class="iframe-container">
         <iframe
+          class="iframe-container"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/MpEer4FAAvY"
@@ -69,24 +154,56 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
+        >
+        </iframe>
       </div>
     </main>
-    <section>
-      <h3><i>Nosso patrocinador oficial</i></h3>
-      <img src="../images/patrocinador.jpg" alt="patrocinador" />
+    <h3><i>Nosso patrocinador oficial</i></h3>
+    <section class="investor">
+      <div>
+        <img
+          style="align-items: center"
+          src="../images/patrocinador.jpg"
+          alt="patrocinador"
+        />
+      </div>
     </section>
     <br />
     <article>
       <span>Nos siga nas redes sociais!</span>
       <aside>
         <ul>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Twitter</li>
-          <li>Telegram</li>
-          <li>WhatsApp</li>
-          <li>LinkedIn</li>
+          <li>
+            <a
+              href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lI
+            joxNjg1NzM3Mzc0LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
+              target="_blank"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"
+              target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
+          </li>
+          <li>
+            <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/login/pt" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
         </ul>
       </aside>
     </article>
